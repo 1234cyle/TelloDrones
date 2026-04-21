@@ -57,13 +57,13 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('takeoff')
+        sendmsg('takeoff',8)
 
         # Commit Message: First Hoop - Stable
         # Don't forget to take video of this portion of the competition.
         # Make sure I put video into our Repository
         # Commit Message: First Hoop Video in Repository
-
+        sendmsg('go 230 15 20 100')
 
 
 
