@@ -57,59 +57,22 @@ try:
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
-        sendmsg('battery?')
-        sendmsg('takeoff',8)
-
-        # Commit Message: First Hoop - Stable
-        # Don't forget to take video of this portion of the competition.
-        # Make sure I put video into our Repository
-        # Commit Message: First Hoop Video in Repository
-        sendmsg('go 195 30 20 100',8)
+        sendmsg('battery?',0)
+        sendmsg('takeoff',12)
+        
+    
+        sendmsg('go 160 26 20 100',8)
 
     
-
-
-
-
-        # Commit Message: Second Hoop - Stable
-        # Don't forget to take video of this portion of the competition.
-        # Make sure I put video into our Repository
-        # Commit Message: Second Hoop Video in Repository  
-        sendmsg('go 220 15 35 100',8)
+ 
+        sendmsg('go 240 0 35 100',12)
 
         
-
-
-
-
-
-
-        # Commit Message: Third Hoop - Stable
-        # Don't forget to take video of this portion of the competition.
-        # Make sure I put video into our Repository
-        # Commit Message: Third Hoop Video in Repository 
-
-
-
-
-
-
-        # Commit Message: Fourth Hoop - Stable
-        # Don't forget to take video of this portion of the competition.
-        # Make sure I put video into our Repository
-        # Commit Message: Fourth Hoop Video in Repository
-
-
-
-
-
-
-        # Commit Message: All Hoops - Stable
-        # Don't forget to take video of this portion of the competition.
-        # Make sure I put video into our Repository
-        # Commit Message: All Hoops Video in Repository
-
+        sendmsg('curve 155 145 0 0 270 0 60')
+        sendmsg('curve -145 -155 0 0 270 20 60',10)
+        sendmsg('cw 180',8)
         sendmsg('land')
+        sendmsg('temp?')
         sendmsg('battery?')
         print('\nGreat Flight!!!')
 
