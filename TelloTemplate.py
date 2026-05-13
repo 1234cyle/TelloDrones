@@ -61,16 +61,12 @@ try:
         sendmsg('takeoff',12)
         
     
-        sendmsg('go 160 26 20 100',8)
-
     
- 
-        sendmsg('go 240 0 35 100',12)
-
         
-        sendmsg('curve 155 145 0 0 270 0 60')
-        sendmsg('curve -145 -155 0 0 270 20 60',10)
-        sendmsg('cw 180',8)
+
+
+
+
         sendmsg('land')
         sendmsg('temp?')
         sendmsg('battery?')
