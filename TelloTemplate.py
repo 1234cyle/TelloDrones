@@ -53,19 +53,20 @@ ready = input('\nAre you ready to take flight: ')
 
 
 try:
-    if ready.lower() == 'yes':
+    if ready.lower() == 'y':
         print("\nStarting Drone!\n")
         # MAKE SURE YOU TURN OFF DRONE WHEN CODING PLEASE
         sendmsg('command', 0)
         sendmsg('battery?',0)
         sendmsg('takeoff',12)
-        
+        sendmsg('up 25',10)
+        sendmsg('flip l')
     
-    
+        sendmsg('left 25', 8)
 
+        sendmsg('cw 270', 7)
 
-
-
+        sendmsg('foward 10')
 
         sendmsg('land')
         sendmsg('temp?')
